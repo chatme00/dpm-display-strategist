@@ -36,11 +36,30 @@ templates/
 
 ## Install
 
-After this repository is on GitHub, install the skill with the Codex skill installer:
+### With `npx skills`
+
+For agents supported by the open skills CLI:
+
+```bash
+npx skills add https://github.com/chatme00/dpm-display-strategist --skill dpm-display-strategist
+```
+
+Install globally for Codex:
+
+```bash
+npx skills add https://github.com/chatme00/dpm-display-strategist \
+  --skill dpm-display-strategist \
+  --agent codex \
+  --global
+```
+
+### With the Codex skill installer
+
+For Codex's bundled skill installer:
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo <owner>/<repo> \
+  --repo chatme00/dpm-display-strategist \
   --path dpm-display-strategist
 ```
 
