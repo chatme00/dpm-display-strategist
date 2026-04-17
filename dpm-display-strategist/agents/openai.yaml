@@ -1,0 +1,4 @@
+interface:
+  display_name: "DPM展示面策略师"
+  short_description: "读取DPM客户填空资料并生成客户可读的相亲平台完整展示面资料包"
+  default_prompt: "使用 $dpm-display-strategist 读取这份客户资料，补问关键缺失项，并生成相亲平台完整展示面资料包。"
